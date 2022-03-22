@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="app.js"></script>
+  <title>stop bullying</title>
+</head>
+
+<body>
+  <audio id="success_sound">
+    <source src="sounds/celebration Sound Effect.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="wrong_sound">
+    <source src="sounds/Sad SOUND EFFECT.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="choosing">
+    <source src="sounds/choosing the right.mpeg" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="placing">
+    <source src="sounds/place Each.mpeg" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="audio1">
+    <source src="sounds/audio1.mpeg" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="audio2">
+    <source src="sounds/audio2.mpeg" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Audios -->
+  <audio class="a1">
+    <source src="sounds/A1/pb.mpeg" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+  <audio class="a1">
+    <source src="sounds/A1/cb.mpeg" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+  <audio class="a1">
+    <source src="sounds/A1/vb.mpeg" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- second part -->
+  <audio class="a2">
+    <source src="sounds/A2/sb.mpeg" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+  <audio class="a2">
+    <source src="sounds/A2/bd.mpeg" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+  <audio class="a2">
+    <source src="sounds/A2/btow.mpeg" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+  <!-- third part -->
+  <audio class="a3">
+    <source src="sounds/A3/btu.mpeg" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+  <audio class="a3">
+    <source src="sounds/A3/hearing.mpeg" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+  <audio class="a3">
+    <source src="sounds/A3/sb.mpeg" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+
+
+  <div id="loader">
+    <img src="gifs/loader.gif" alt="Not found" />
+  </div>
+
+  <header id="header">
+    <div id="inner_header">
+      <h2 id="message"></h2>
+    </div>
+  </header>
+
+  <div class="contanier">
+    <div class="question-card">
+      <div class="img-touch-zoom">
+        <img class="cover-img" src="Imges/cover.gif" alt="cover" width="300" height="450" />
+      </div>
+      <h2>Up standers against bullying!</h2>
+      <div class="buttons_container">
+        <button id="definition" class="start_btn">Definition of bullying</button>
+        <button id="L1" class="start_btn">Level 1</button>
+        <button id="L2" class="start_btn">Level 2</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="second_card fade">
+    <h1 class="qestion1"></h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1Oq7UE_NGfw" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br><br><br>
+      <hr>
+      <div class="buttons_container">
+        <button class="home">Home</button>
+      </div>
+    <!-- class="next_btn" -->
+  </div>
+
+  <div class="second_card fade">
+    <h1 class="qestion"></h1>
+    <div class="img-touch-zoom">
+      <img class="cover-img" src="Imges/cover1.png" alt="cover" width="300" height="450" />
+    </div>
+    <br>
+    <hr>
+      <div class="buttons_container">
+        <!-- <button class="back">Back</button> -->
+        <button class="home">Home</button>
+        <button class="next_btn">let us play!</button>
+      </div>
+    <!-- <button id="play" class="next_btn">Play now!</button> -->
+  </div>
+
+  <div class="second_card fade">
+    <div class="intructions_page">
+      <h1>Game instructions and goals</h1>
+      <div class="instructions">
+        <h2>what you are gonna do ?</h2>
+        <p>You need to:</p>
+        <p id="instruct1">Place the image of the type of bullying in the right place</p>
+      </div>
+      <div class="instructions">
+        <h2>What is the goal of this game?</h2>
+        <p>You are gonna:</p>
+        <p id="instruct2"> know and distinguish the different types of bullying</p>
+      </div>
+    </div>
+    <br>
+    <hr>
+      <div class="buttons_container">
+        <button class="back">Back</button>
+        <button class="home">Home</button>
+        <button class="next_btn">Next</button>
+      </div>
+  </div>
+
+  <div class="second_card fade">
+    <h1 class="qestion"></h1>
+    <div class="answers_container">
+      <div class="ans">
+        <p class="title">Physical bullying</p>
+        <div id="DA1" class="dropArea"></div>
+      </div>
+      <div class="ans">
+        <p class="title">Cyper bullying</p>
+        <div id="DA2" class="dropArea"></div>
+      </div>
+      <div class="ans">
+        <p class="title">Verbal bullying</p>
+        <div id="DA3" class="dropArea"></div>
+      </div>
+    </div>
+    <div class="answers">
+      <img id="A3" class="dragedImg" src="Imges/q1/2.jpeg" width="90" height="150" alt="not founed" />
+
+      <img id="A2" class="dragedImg" src="Imges/q1/1.jpeg" width="90" height="150" alt="not founed" />
+
+      <img id="A1" class="dragedImg" src="Imges/q1/3.jpeg" width="90" height="150" alt="not founed" />
+    </div>
+    <hr>
+      <div class="buttons_container">
+        <button class="back">Back</button>
+        <button class="home">Home</button>
+        <button class="next_btn">Next</button>
+      </div>
+  </div>
+
+  <div class="second_card fade">
+    <h1 class="qestion"></h1>
+    <div class="answers_container">
+      <div class="ans">
+        <p class="title2">Physical bullying</p>
+        <div id="DB1" class="dropArea"></div>
+      </div>
+      <div class="ans">
+        <p class="title2">Cyper bullying</p>
+        <div id="DB2" class="dropArea"></div>
+      </div>
+      <div class="ans">
+        <p class="title2">Verbal bullying</p>
+        <div id="DB3" class="dropArea"></div>
+      </div>
+    </div>
+    <div class="answers">
+      <img id="B3" class="dragedImg" src="Imges/q2/1.jpeg" width="90" height="150" alt="not founed" />
+      <img id="B2" class="dragedImg" src="Imges/q2/3.jpeg" width="90" height="150" alt="not founed" />
+      <img id="B1" class="dragedImg" src="Imges/q2/2.jpeg" width="90" height="150" alt="not founed" />
+    </div>
+    <hr>
+      <div class="buttons_container">
+        <button class="back">Back</button>
+        <button class="home">Home</button>
+        <button class="next_btn">Next</button>
+      </div>
+  </div>
+
+  <div class="second_card fade">
+    <h1 class="qestion"></h1>
+    <div class="answers_container">
+      <div class="ans">
+        <p class="title3">Social Bullying</p>
+        <div id="DC1" class="dropArea"></div>
+      </div>
+      <div class="ans">
+        <p class="title3">Bullying disabled</p>
+        <div id="DC2" class="dropArea"></div>
+      </div>
+      <div class="ans">
+        <p class="title3">Bullying the overweight</p>
+        <div id="DC3" class="dropArea"></div>
+      </div>
+    </div>
+    <div class="answers">
+      <img id="C1" class="dragedImg" src="Imges/q3/2.jpeg" width="90" height="150" alt="not founed" />
+      <img id="C2" class="dragedImg" src="Imges/q3/1.jpeg" width="90" height="150" alt="not founed" />
+      <img id="C3" class="dragedImg" src="Imges/q3/3.jpeg" width="90" height="150" alt="not founed" />
+    </div>
+    <hr>
+      <div class="buttons_container">
+        <button class="back">Back</button>
+        <button class="home">Home</button>
+        <button class="next_btn">Next</button>
+      </div>
+  </div>
+
+  <div class="second_card fade">
+    <h1 class="qestion"></h1>
+    <div class="answers_container">
+      <div class="ans">
+        <p class="title4">Social Bullying</p>
+        <div id="DD1" class="dropArea"></div>
+      </div>
+      <div class="ans">
+        <p class="title4">Bullying disabled</p>
+        <div id="DD2" class="dropArea"></div>
+      </div>
+      <div class="ans">
+        <p class="title4">Bullying the overweight</p>
+        <div id="DD3" class="dropArea"></div>
+      </div>
+    </div>
+    <div class="answers">
+      <img id="D1" class="dragedImg" src="Imges/q4/2.jpeg" width="90" height="150" alt="not founed" />
+      <img id="D2" class="dragedImg" src="Imges/q4/1.jpeg" width="90" height="150" alt="not founed" />
+      <img id="D3" class="dragedImg" src="Imges/q4/3.jpeg" width="90" height="150" alt="not founed" />
+    </div>
+    <hr>
+      <div class="buttons_container">
+        <button class="back">Back</button>
+        <button class="home">Home</button>
+        <button class="next_btn">Next</button>
+      </div>
+  </div>
+
+
+  <div class="second_card fade">
+    <h1 class="qestion"></h1>
+    <div class="answers_container">
+      <div class="ans">
+        <p class="title5">Bulling the under weight</p>
+        <div id="DE1" class="dropArea"></div>
+      </div>
+      <div class="ans">
+        <p class="title5">Bullying of hearing</p>
+        <div id="DE2" class="dropArea"></div>
+      </div>
+      <div class="ans">
+        <p class="title5">School bullying</p>
+        <div id="DE3" class="dropArea"></div>
+      </div>
+    </div>
+    <div class="answers">
+      <img id="E1" class="dragedImg" src="Imges/q5/1.jpeg" width="90" height="150" alt="not founed" />
+      <img id="E2" class="dragedImg" src="Imges/q5/2.jpeg" width="90" height="150" alt="not founed" />
+      <img id="E3" class="dragedImg" src="Imges/q5/3.jpeg" width="90" height="150" alt="not founed" />
+    </div>
+    <hr>
+      <div class="buttons_container">
+        <button class="back">Back</button>
+        <button class="home">Home</button>
+        <!-- <button class="next_btn">Next</button> -->
+      </div>
+    <!-- <button id="part_two" class="next_btn">Next</button> -->
+  </div>
+
+  <div class="second_card fade">
+    <h1 id="part-two-message" class="qestion"></h1>
+    <div class="img-touch-zoom">
+      <img class="cover-img" src="Imges/cover2.PNG" alt="cover" width="300" height="450" />
+    </div>
+    <br>
+    <hr>
+      <div class="buttons_container">
+        <!-- <button class="back">Back</button> -->
+        <button class="home">Home</button>
+        <button class="next_btn">let us play!</button>
+      </div>
+    <!-- <button id="part_two2" class="next_btn">Play now!</button> -->
+  </div>
+
+
+  <div class="second_card fade">
+    <div class="intructions_page">
+      <h1>Game instructions and goals</h1>
+      <div class="instructions">
+        <h2>what you are gonna do ?</h2>
+        <p>You need to:</p>
+        <p id="inst1">Press the correct behavior</p>
+      </div>
+      <div class="instructions">
+        <h2>What is the goal of this game?</h2>
+        <p>You are gonna:</p>
+        <p id="inst2">know the right behavior</p>
+        <p id="inst3">Know what to do in case of being bullied</p>
+      </div>
+    </div>
+    <br>
+    <hr>
+      <div class="buttons_container">
+        <button class="back">Back</button>
+        <button class="home">Home</button>
+        <button class="next_btn">Next</button>
+      </div>
+  </div>
+
+
+
+
+
+
+  <div class="second_card fade">
+    <div class="container3">
+      <img class="img1" src="Imges/part2/q1/right.jpeg" alt="not found" width="290" height="230" />
+      <img class="img2" src="Imges/part2/q1/wrong.jpeg" alt="not found" width="290" height="230" />
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+      <div class="buttons_container">
+        <button class="back">Back</button>
+        <button class="home">Home</button>
+        <button class="next_btn">Next</button>
+      </div>
+  </div>
+
+  <div class="second_card fade">
+    <div class="container3">
+      <img class="img2" src="Imges/part2/q2/wrong.jpeg" alt="not found" width="290" height="230" />
+      <img class="img1" src="Imges/part2/q2/right.jpeg" alt="not found" width="290" height="230" />
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+      <div class="buttons_container">
+        <button class="back">Back</button>
+        <button class="home">Home</button>
+        <button class="next_btn">Next</button>
+      </div>
+  </div>
+
+  <div class="second_card fade">
+    <div class="container3">
+      <img class="img1" src="Imges/part2/q3/right.jpeg" alt="not found" width="290" height="230" />
+      <img class="img2" src="Imges/part2/q3/wrong.jpeg" alt="not found" width="290" height="230" />
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+      <div class="buttons_container">
+        <button class="back">Back</button>
+        <button class="home">Home</button>
+        <button class="next_btn">Next</button>
+      </div>
+  </div>
+
+  <div class="second_card fade">
+    <div class="container3">
+      <img class="img2" src="Imges/part2/q4/wrong.jpeg" alt="not found" width="290" height="230" />
+      <img class="img1" src="Imges/part2/q4/right.jpeg" alt="not found" width="290" height="230" />
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+      <div class="buttons_container">
+        <button class="back">Back</button>
+        <button class="home">Home</button>
+        <button class="next_btn">Next</button>
+      </div>
+  </div>
+
+  <div class="second_card fade">
+    <div class="container3">
+      <img class="img1" src="Imges/part2/q5/right.jpeg" alt="not found" width="290" height="230" />
+      <img class="img2" src="Imges/part2/q5/wrong.jpeg" alt="not found" width="290" height="230" />
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+      <div class="buttons_container">
+        <button class="back">Back</button>
+        <button class="home">Home</button>
+        <button class="next_btn">Next</button>
+      </div>
+  </div>
+
+  <div class="second_card fade">
+    <div class="container3">
+      <img class="img1" src="Imges/part2/q6/right.jpeg" alt="not found" width="290" height="230" />
+      <img class="img2" src="Imges/part2/q6/wrong.jpeg" alt="not found" width="290" height="230" />
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+      <div class="buttons_container">
+        <button class="back">Back</button>
+        <button class="home">Home</button>
+        <button class="next_btn">Next</button>
+      </div>
+  </div>
+
+  <div class="second_card fade">
+    <div class="container3">
+      <img class="img2" src="Imges/part2/q7/wrong.jpeg" alt="not found" width="290" height="230" />
+      <img class="img1" src="Imges/part2/q7/right.jpeg" alt="not found" width="290" height="230" />
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+      <div class="buttons_container">
+        <button class="back">Back</button>
+        <button class="home">Home</button>
+        <button class="next_btn">Next</button>
+      </div>
+  </div>
+  <div class="second_card fade">
+    <div class="container3">
+      <img class="img2" src="Imges/part2/q8/wrong.jpeg" alt="not found" width="290" height="230" />
+      <img class="img1" src="Imges/part2/q8/right.jpeg" alt="not found" width="290" height="230" />
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+      <div class="buttons_container">
+        <button class="back">Back</button>
+        <button class="home">Home</button>
+        <button class="next_btn">Next</button>
+      </div>
+  </div>
+
+
+  <div class="second_card fade">
+    <div class="container3">
+      <img class="img2" src="Imges/part2/q9/wrong.jpeg" alt="not found" width="290" height="230" />
+      <img class="img1" src="Imges/part2/q9/right.jpeg" alt="not found" width="290" height="230" />
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+      <div class="buttons_container">
+        <button class="back">Back</button>
+        <button class="home">Home</button>
+        <button id="au1" class="next_btn">Next</button>
+      </div>
+    <!-- <button id="au1" class="next_btn">Next</button> -->
+  </div>
+
+
+  <div class="second_card fade">
+    <h1 class="qestion2">What do you do if someone bullies you on the street?</h1>
+    <div class="container3">
+      <img class="img2" src="Imges/part2/q10/wrong.jpeg" alt="not found" width="290" height="230" />
+      <img class="img1" src="Imges/part2/q10/right.jpeg" alt="not found" width="290" height="230" />
+    </div>
+    <hr>
+      <div class="buttons_container">
+        <button class="back">Back</button>
+        <button class="home">Home</button>
+        <button id="au2" class="next_btn">Next</button>
+      </div>
+    <!-- <button id="au2" class="next_btn">Next</button> -->
+  </div>
+
+  <div class="second_card fade">
+    <h1 class="qestion2">What do you do if you get bullied at school?</h1>
+    <div class="container3">
+      <img class="img2" src="Imges/part2/q11/wrong.jpeg" alt="not found" width="290" height="230" />
+      <img class="img1" src="Imges/part2/q11/right.jpeg" alt="not found" width="290" height="230" />
+    </div>
+    <hr>
+    <div class="buttons_container">
+      <button class="back">Back</button>
+      <button class="home">Home</button>
+      <!-- <button class="next_btn">Next</button> -->
+      <button id="au3" class="next_btn">Next</button>
+    </div>
+    <!-- <button id="lastNext" class="next_btn">Next</button> -->
+  </div>
+
+
+
+  <div class="second_card fade">
+    <h1 class="qestion2">What would you do if cyberbullying happened to you?</h1>
+    <div class="container3">
+      <img class="img2" src="Imges/part2/q12/wrong.jpeg" alt="not found" width="290" height="230" />
+      <img class="img1" src="Imges/part2/q12/right.jpeg" alt="not found" width="290" height="230" />
+    </div>
+    <hr>
+      <div class="buttons_container">
+        <button class="back">Back</button>
+        <button class="home">Home</button>
+        <button id="au4" class="next_btn">Next</button>
+      </div>
+    <!-- <button id="au2" class="next_btn">Next</button> -->
+  </div>
+
+  <div class="second_card fade">
+    <h1 class="qestion2">What would you do if you were to experience physical bullying?</h1>
+    <div class="container3">
+      <img class="img2" src="Imges/part2/q13/wrong.jpeg" alt="not found" width="290" height="230" />
+      <img class="img1" src="Imges/part2/q13/right.jpeg" alt="not found" width="290" height="230" />
+    </div>
+    <hr>
+      <div class="buttons_container">
+        <button class="back">Back</button>
+        <button class="home">Home</button>
+        <button id="lastNext" class="next_btn">Your results</button>
+        <!-- <button id="au4" class="next_btn">Next</button> -->
+      </div>
+    <!-- <button id="au2" class="next_btn">Next</button> -->
+  </div>
+
+
+
+
+  <div class="second_card fade">
+    <h1 class="qestion4">Your results</h1>
+    <div class="results">
+      <h2>Congratulations!!</h2>
+      <img id="trophy" src="gifs/trophy.gif" alt="Not founed">
+      <h3>You got <span id="score"></span></h3>
+      <h4 id="h41">Right answers <span id="rightScore"></span></h4>
+      <h4 id="h42">Wrong answers <span id="wrongScore"></span></h4>
+    </div>
+    <div class="buttons_container">
+      <button class="home">Home</button>
+    </div>
+  </div>
+
+  <div class="celebration fade"></div>
+</body>
+
+</html>
